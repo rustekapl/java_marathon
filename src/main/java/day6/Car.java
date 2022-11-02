@@ -1,9 +1,18 @@
-package day5;
+package day6;
 
 public class Car {
     private String model;
     private String color;
     private int year;
+
+    public void info() {
+        System.out.println("Это автомобиль");
+    }
+
+    public int yearDifference(int inputYear) {
+
+        return Math.abs(inputYear-this.year);
+    }
 
 
     public String getModel() {

@@ -1,6 +1,6 @@
 package day5;
 
-class Motorbike {
+public class Motorbike {
     String model;
     String color;
     int year;
