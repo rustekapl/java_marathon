@@ -2,11 +2,11 @@ package day7;
 
 public class Airplane {
 
-    String manufacturer;
-    int year;
-    int length;
-    int weight;
-    int fuel;
+    private String manufacturer;
+    private int year;
+    private int length;
+    private int weight;
+    private int fuel;
 
     public Airplane(String manufacturer, int year, int length, int weight) {
         this.manufacturer = manufacturer;
@@ -15,7 +15,6 @@ public class Airplane {
         this.weight = weight;
         this.fuel = 0;
     }
-
 
 
     public void setManufacturer(String manufacturer) {
@@ -52,21 +51,19 @@ public class Airplane {
 
     public void fillUp(int n) {
 
-        setFuel(getFuel()+n);
+        setFuel(getFuel() + n);
     }
-    public static void compareAirplanes(Airplane one, Airplane two){
-        if(one.length> two.length){
+
+    public static void compareAirplanes(Airplane one, Airplane two) {
+        if (one.length > two.length) {
             System.out.println("Первый самолет длиннее");
         }
-        if(one.length< two.length) {
+        if (one.length < two.length) {
             System.out.println("Второй самолет длиннее");
-        }
-        else{
+        } else {
             System.out.println("Длины самолетов равны");
         }
     }
-
-
 
 
 }
