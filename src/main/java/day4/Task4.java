@@ -2,13 +2,14 @@ package day4;
 
 public class Task4 {
     public static void main(String[] args) {
-        int[] array = new int[100];
+        int arrayLength = 100;
+        int[] array = new int[arrayLength];
 
         int max = Integer.MIN_VALUE;
         int index=0;
 
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < array.length; i++) {
             array[i] = (int) (Math.random() * 10000);
         }
 
