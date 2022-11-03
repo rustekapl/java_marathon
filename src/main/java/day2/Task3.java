@@ -7,12 +7,12 @@ public class Task3 {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         int b = scanner.nextInt();
-        if(a>=b){
+        if (a >= b) {
             System.out.println("Некорректный ввод");
         }
-        int i = a+1;
-        while (i<b){
-            if(i%5==0&&!(i%10==0)){
+        int i = a + 1;
+        while (i < b) {
+            if (i % 5 == 0 && !(i % 10 == 0)) {
                 System.out.print(i);
                 System.out.print(" ");
             }

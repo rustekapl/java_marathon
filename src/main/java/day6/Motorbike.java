@@ -11,11 +11,12 @@ public class Motorbike {
         this.year = year;
     }
 
-    public void info(){
+    public void info() {
         System.out.println("Это мотоцикл");
     }
+
     public int yearDifference(int inputYear) {
-        return Math.abs(inputYear-this.year);
+        return Math.abs(inputYear - this.year);
     }
 
     public String getModel() {

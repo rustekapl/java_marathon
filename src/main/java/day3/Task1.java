@@ -8,7 +8,7 @@ public class Task1 {
 
         while (true) {
             String cityName = scanner.nextLine();
-            if(cityName.equals("Stop")){
+            if (cityName.equals("Stop")) {
                 break;
             }
 

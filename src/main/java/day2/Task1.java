@@ -7,16 +7,13 @@ public class Task1 {
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
 
-        if(num<=0){
+        if (num <= 0) {
             System.out.println("Ошибка ввода");
-        }
-        else if(num<5){
+        } else if (num < 5) {
             System.out.println("Малоэтажный дом");
-        }
-        else if (num<9){
+        } else if (num < 9) {
             System.out.println("Среднеэтажный дом");
-        }
-        else {
+        } else {
             System.out.println("Многоэтажный дом");
         }
 

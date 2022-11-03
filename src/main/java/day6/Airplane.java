@@ -51,10 +51,8 @@ public class Airplane {
 
     public void fillUp(int n) {
 
-        setFuel(getFuel()+n);
+        setFuel(getFuel() + n);
     }
-
-
 
 
 }

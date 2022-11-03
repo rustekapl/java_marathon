@@ -20,28 +20,26 @@ public class Task1 {
 
 
         for (int i : array) {
-            sum+=i;
-            if(i>8){
+            sum += i;
+            if (i > 8) {
                 numBiggerThanEight++;
             }
-            if(i==1){
+            if (i == 1) {
                 numEqOne++;
             }
-            if(i%2==0){
+            if (i % 2 == 0) {
                 evenNum++;
-            }
-            else {
+            } else {
                 oddNum++;
             }
         }
         System.out.println(Arrays.toString(array));
-        System.out.println("Длина массива: "+array.length);
-        System.out.println("Количество чисел больше 8: "+numBiggerThanEight);
-        System.out.println("Количество чисел равных 1: "+numEqOne);
-        System.out.println("Количестве четных чисел: "+evenNum);
-        System.out.println("Количестве нечетных чисел: "+oddNum);
-        System.out.println("Сумма всех элементов массива: "+sum);
-
+        System.out.println("Длина массива: " + array.length);
+        System.out.println("Количество чисел больше 8: " + numBiggerThanEight);
+        System.out.println("Количество чисел равных 1: " + numEqOne);
+        System.out.println("Количестве четных чисел: " + evenNum);
+        System.out.println("Количестве нечетных чисел: " + oddNum);
+        System.out.println("Сумма всех элементов массива: " + sum);
 
 
     }
