@@ -11,7 +11,7 @@ public class Task1 {
             if(cityName.equals("Stop")){
                 break;
             }
-            else {
+
             switch (cityName) {
                 case "Москва":
                 case "Владивосток":
@@ -35,7 +35,7 @@ public class Task1 {
                     break;
                 default:
                     System.out.println("Неизвестная страна");
-            }
+
             }
         }
 

@@ -12,8 +12,8 @@ public class Task2 {
         }
         for (int i = a+1; i < b; i++) {
             if(i%5==0&&!(i%10==0)){
-                System.out.print(i);
-                System.out.print(" ");
+                System.out.print(i+" ");
+
             }
 
         }
