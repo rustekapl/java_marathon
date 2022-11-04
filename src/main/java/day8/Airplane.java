@@ -1,4 +1,4 @@
-package day6;
+package day8;
 
 public class Airplane {
 
@@ -54,5 +54,12 @@ public class Airplane {
         setFuel(getFuel() + n);
     }
 
-
+    @Override
+    public String toString() {
+        return "Изготовитель: " + this.manufacturer + ", "
+                + "год выпуска: " + this.year + ", "
+                + "длина: " + this.length + ", "
+                + "вес: " + this.weight + ", "
+                + "количество топлива в баке: " + this.getFuel();
+    }
 }
