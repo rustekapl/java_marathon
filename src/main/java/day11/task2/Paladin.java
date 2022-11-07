@@ -1,8 +1,8 @@
 package day11.task2;
 
 public class Paladin extends Hero implements Healer {
-    public int healHimself;
-    public int healTeammate;
+    private int healHimself;
+    private int healTeammate;
 
     public Paladin() {
         physAtt = 15;
