@@ -26,7 +26,7 @@ public class Courier implements Worker {
 
     @Override
     public void doWork() {
-        salary += 100;
+        salary += Constants.SALARY_COURIER;
         warehouse.setCountDeliveredOrders(warehouse.getCountDeliveredOrders() + 1);
 
 
@@ -34,7 +34,7 @@ public class Courier implements Worker {
 
     @Override
     public void bonus() {
-        if (warehouse.getCountDeliveredOrders() < 10000) {
+        if (warehouse.getCountDeliveredOrders() < Constants.VALUE_ORDERS_FOR_BONUS) {
             System.out.println("Бонус пока не доступен");
             return;
         }
@@ -42,7 +42,7 @@ public class Courier implements Worker {
             System.out.println("Бонус уже был выплачен");
             return;
         }
-        salary += 50000;
+        salary += Constants.BONUS_COURIER;
         isPayed = true;
     }
 }

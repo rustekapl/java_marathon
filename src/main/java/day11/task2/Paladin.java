@@ -5,17 +5,17 @@ public class Paladin extends Hero implements Healer {
     private int healTeammate;
 
     public Paladin() {
-        physAtt = 15;
-        physDef = 50;
-        magicDef = 20;
-        healHimself = 25;
-        healTeammate = 10;
+        physAtt = Costants.PHY_ATT_PALADIN;
+        physDef = Costants.PHY_DEF_PALADIN;
+        magicDef = Costants.MAGIC_DEF_PALADIN;
+        healHimself = Costants.HEALTH_HIMSELF_PALADIN;
+        healTeammate = Costants.HEALTH_TEAMMATE_PALADIN;
     }
 
     @Override
     public void healHimself() {
-        if (health + healHimself > 100) {
-            health = 100;
+        if (health + healHimself > Costants.MAX_HEALTH) {
+            health = Costants.MAX_HEALTH;
         } else {
             health += healHimself;
         }
@@ -24,8 +24,8 @@ public class Paladin extends Hero implements Healer {
 
     @Override
     public void healTeammate(Hero hero) {
-        if (hero.health + healTeammate > 100) {
-            hero.health = 100;
+        if (hero.health + healTeammate > Costants.MAX_HEALTH) {
+            hero.health = Costants.MAX_HEALTH;
         } else {
             hero.health += healTeammate;
         }

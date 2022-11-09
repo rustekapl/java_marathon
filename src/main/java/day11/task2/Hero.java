@@ -5,17 +5,17 @@ public abstract class Hero implements PhysAttack {
     double physDef;
     double magicDef;
     int physAtt;
-    int magicAtt;
+
 
     public Hero() {
-        health = 100;
+        health = Costants.HEALTH;
     }
 
     @Override
     public void physicalAttack(Hero hero) {
         double phyAttackDamage = physAtt * (1 - hero.physDef / 100);
-        if (hero.health - phyAttackDamage < 0) {
-            hero.health = 0;
+        if (hero.health - phyAttackDamage < Costants.MIN_HEALTH) {
+            hero.health = Costants.MIN_HEALTH;
         } else {
             hero.health -= phyAttackDamage;
         }

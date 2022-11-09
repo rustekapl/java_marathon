@@ -26,14 +26,14 @@ public class Picker implements Worker {
 
     @Override
     public void doWork() {
-        salary += 80;
+        salary += Constants.SALARY_PICKER;
         warehouse.setCountPickedOrders(warehouse.getCountPickedOrders() + 1);
 
     }
 
     @Override
     public void bonus() {
-        if (warehouse.getCountPickedOrders() < 10000) {
+        if (warehouse.getCountPickedOrders() < Constants.VALUE_ORDERS_FOR_BONUS) {
             System.out.println("Бонус пока не доступен");
             return;
         }
@@ -41,7 +41,7 @@ public class Picker implements Worker {
             System.out.println("Бонус уже был выплачен");
             return;
         }
-        salary += 70000;
+        salary += Constants.BONUS_PICKER;
         isPayed = true;
     }
 }
