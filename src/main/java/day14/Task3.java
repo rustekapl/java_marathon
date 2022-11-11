@@ -24,11 +24,7 @@ public class Task3 {
                 String name = personData[0];
                 int year = Integer.parseInt(personData[1]);
                 if (year < 0) {
-                    try {
-                        throw new IOException();
-                    } catch (IOException e) {
-                        System.out.println("Некорректный входной файл");
-                    }
+                    throw new IOException();
                 } else {
                     persons.add(new Person(name, year));
                 }
@@ -37,6 +33,8 @@ public class Task3 {
             scanner.close();
         } catch (FileNotFoundException e) {
             System.out.println("Файл не найден");
+        } catch (IOException e) {
+            System.out.println("Некорректный входной файл");
         }
 
         return persons;
