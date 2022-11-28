@@ -9,7 +9,7 @@ import java.util.*;
  */
 public class Task1 {
 
-    private static String key;
+
     private static Map<String, Integer> words = new HashMap<>();
 
     public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class Task1 {
             scanner.useDelimiter("[.,:;()?!\"\\s–]+");
 
             while (scanner.hasNext()) {
-                key = scanner.next();
+                String key = scanner.next();
                 if (words.containsKey(key)) {
                     words.put(key, (words.get(key) + 1));
                 } else {

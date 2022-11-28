@@ -26,6 +26,7 @@ public class Task2 {
             scanner.close();
         } catch (FileNotFoundException e) {
             System.out.println("File not found!");
+            return;
         }
 
         Scanner scanner = new Scanner(System.in);
